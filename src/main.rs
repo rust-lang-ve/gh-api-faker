@@ -23,7 +23,6 @@ async fn main() -> std::io::Result<()> {
         App::new()
             .wrap(
                 Cors::new()
-                    .allowed_origin("*")
                     .allowed_methods(vec!["GET"])
                     .max_age(3600)
                     .finish(),
